@@ -1,13 +1,14 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './features/layout/Layout';
 import UnderConstruction from './features/under-construction/UnderConstruction';
+import LibraryPage from './features/library/LibraryPage';
 
 const routes = [
   { path: '/', element: <UnderConstruction /> },
   { path: '/workout', element: <UnderConstruction /> },
   { path: '/builder', element: <UnderConstruction /> },
   { path: '/progress', element: <UnderConstruction /> },
-  { path: '/library', element: <UnderConstruction /> },
+  { path: '/library', element: <LibraryPage /> },
   { path: '/articles', element: <UnderConstruction /> },
   { path: '/settings', element: <UnderConstruction /> },
   { path: '/profile', element: <UnderConstruction /> },
