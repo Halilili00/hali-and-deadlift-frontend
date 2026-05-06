@@ -1,4 +1,3 @@
-
 const config = {
   schemaFile: 'http://localhost:5001/openapi/v1.json',
   apiFile: './src/store/hali-deadlift-api-setup.ts',
