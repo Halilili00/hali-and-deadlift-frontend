@@ -4,14 +4,20 @@ import UnderConstruction from './features/under-construction/UnderConstruction';
 import LibraryPage from './features/library/LibraryPage';
 
 const routes = [
-  { path: '/', element: <UnderConstruction /> },
-  { path: '/workout', element: <UnderConstruction /> },
-  { path: '/builder', element: <UnderConstruction /> },
-  { path: '/progress', element: <UnderConstruction /> },
-  { path: '/library', element: <LibraryPage /> },
-  { path: '/articles', element: <UnderConstruction /> },
-  { path: '/settings', element: <UnderConstruction /> },
-  { path: '/profile', element: <UnderConstruction /> },
+  { path: '/', Component: UnderConstruction },
+  { path: '/workout', Component: UnderConstruction },
+  { path: '/builder', Component: UnderConstruction },
+  { path: '/progress', Component: UnderConstruction },
+  {
+    path: '/library',
+    children: [
+      { index: true, Component: LibraryPage },
+      { path: ':exerciseId', Component: UnderConstruction },
+    ],
+  },
+  { path: '/articles', Component: UnderConstruction },
+  { path: '/settings', Component: UnderConstruction },
+  { path: '/profile', Component: UnderConstruction },
 ];
 
 function App() {
