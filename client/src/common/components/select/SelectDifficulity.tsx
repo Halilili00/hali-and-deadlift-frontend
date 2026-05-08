@@ -20,6 +20,7 @@ const SelectDifficulity: React.FC<Props> = ({ onChange }) => {
       onChange={onChange}
       placeholder='Select Difficulty'
       isClearable
+      className='min-w-48'
     />
   );
 };

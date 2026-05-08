@@ -22,6 +22,7 @@ const SelectEquipments: React.FC<Props> = ({ onChange }) => {
       getOptionLabel={(option) => option.name ?? ''}
       getOptionValue={(option) => option.id ?? ''}
       placeholder='All Equipments'
+      className='min-w-48'
     />
   );
 };

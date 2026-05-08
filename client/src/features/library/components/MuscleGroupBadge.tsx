@@ -33,7 +33,7 @@ const MuscleGroupBadge: React.FC<Props> = ({
   };
 
   return (
-    <button className={`px-3 py-1.5 ${bgColor()} ${className}`} onClick={onClick}>
+    <button className={`px-3 py-1.5 text-nowrap ${bgColor()} ${className}`} onClick={onClick}>
       {name}
     </button>
   );

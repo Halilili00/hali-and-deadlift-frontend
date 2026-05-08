@@ -11,6 +11,7 @@ const injectedRtkApi = api.injectEndpoints({
           MuscleGroupIds: queryArg.muscleGroupIds,
           EquipmentIds: queryArg.equipmentIds,
           Difficulty: queryArg.difficulty,
+          Name: queryArg.name,
         },
       }),
     }),
@@ -28,6 +29,7 @@ export type GetExercisesApiArg = {
   muscleGroupIds?: string[];
   equipmentIds?: string[];
   difficulty?: Difficulty;
+  name?: string;
 };
 export type GetMuscleGroupsApiResponse = /** status 200 OK */ GetMuscleGroupsResponse[];
 export type GetMuscleGroupsApiArg = void;

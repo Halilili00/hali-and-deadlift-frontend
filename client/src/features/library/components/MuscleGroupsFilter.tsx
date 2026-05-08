@@ -34,7 +34,7 @@ const MuscleGroupsFilter: React.FC<Props> = ({ filter, setFilter }) => {
   };
 
   return (
-    <div className='flex py-2 space-x-1.5'>
+    <div className='py-2 space-x-1.5 space-y-1.5'>
       <MuscleGroupBadge
         key='all'
         name='All'
